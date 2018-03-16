@@ -46,4 +46,4 @@ Questo perchè nelle nuove versioni di php la funzione dl() non è supportata, q
 - Nei tempi
 
 ## Programma di massima per la prossima giornata di lavoro
-- Inizio scrittura codice
+- scelta definitiva della libreria e inizio scrittura codice
