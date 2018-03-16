@@ -38,9 +38,11 @@ il problema era che mancava questa riga di codice:
 face_cascade.load('C:\\xampp\\htdocs\\prog3\haarcascade_frontalface_default.xml');
 ~~~
 che permette a face_cascade (un oggetto di tipo cv2) di caricare il file xml contenente le impostazioni e i metodi necessari al rilevamento delle faccie.
+3. Provando a usare OpenCV con PHP viene visualizzato l'errore Call to undefined function dl(). 
+Questo perchè nelle nuove versioni di php la funzione dl() non è supportata, quindi va sostituita con ini_set():
 
 ##  Punto della situazione rispetto alla pianificazione
-- 
+- Nei tempi
 
 ## Programma di massima per la prossima giornata di lavoro
 - Inizio scrittura codice
