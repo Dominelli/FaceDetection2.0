@@ -29,7 +29,9 @@ Lucas
 1. La porta 443 è bloccata, non ho ancora trovato come sistemarla perchè la porta è gia occupata (MAC OS)
 2. provando a far partire il file Python per il riconoscimento facciale dalla shell viene visualizzato questo errore:
 ~~~
-OpenCV Error: Assertion failed (!empty()) in cv::CascadeClassifier::detectMultiScale, file C:\projects\opencv-python\opencv\modules\objdetect\src\cascadedetect.cpp, line 1698
+OpenCV Error: Assertion failed (!empty()) in cv::CascadeClassifier::detectMultiScale, file C:\projects\opencv-
+
+python\opencv\modules\objdetect\src\cascadedetect.cpp, line 1698
 ~~~
 il problema era che mancava questa riga di codice:
 ~~~
