@@ -18,8 +18,8 @@ Lucas
 
 |Orario        |Lavoro svolto                 |
 |--------------|------------------------------|
-|8:20 - 9:05 |ulteriori prove con python per l'integrazione in php|      
-|9:05 - 11:35 |analisi dell'estensione php per la libreria OpenCV: [repository](https://github.com/felixkoch/PHP-FaceDetector) [informazoni](https://stackoverflow.com/questions/22941904/facial-recognition-using-php) |
+|08:20 - 09:05 |ulteriori prove con python per l'integrazione in php|      
+|9:05 - 11:35 |analisi dell'estensione php per la libreria OpenCV: [repository](https://github.com/felixkoch/PHP-FaceDetector), [informazoni](https://stackoverflow.com/questions/22941904/facial-recognition-using-php) |
 |13:15 - 15:30 |installazione dell'estenzione [Emgu]() che permette di usare OpenCV con il linguaggio C# e prove per il riconoscimento facciale|
 |15:30 - 16:30 |Comparazione dei due linguaggi e scelta del linguaggio definitivo|
 
