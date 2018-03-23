@@ -41,7 +41,7 @@ che permette a face_cascade (un oggetto di tipo cv2) di caricare il file xml con
 
 3. Provando a usare OpenCV con PHP viene visualizzato l'errore Call to undefined function dl(). 
 Questo perchè nelle nuove versioni di php la funzione dl() non è supportata, quindi va sostituita con ini_set():
-
+ 
 ##  Punto della situazione rispetto alla pianificazione
 - Nei tempi
 
