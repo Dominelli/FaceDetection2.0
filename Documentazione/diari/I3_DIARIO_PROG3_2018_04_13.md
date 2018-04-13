@@ -5,7 +5,8 @@
 
 ## Lavori svolti
 
-<p><span style="color:Orange">GIONATA</span></p>
+
+ [GIONATA](https://github.com/GioBat)
 
 | Orario        | Lavoro svolto                                                |
 | ------------- | ------------------------------------------------------------ |
@@ -13,8 +14,8 @@
 | 13:15 - 16:30 | Modifica Trello, scrittura schema ER, realizzazione del DataBase |
 
 
+[LUCAS](https://github.com/lucasprevitali)
 
-<p><span style="color:Green">LUCAS</span></p>
 
 | Orario        | Lavoro svolto                                                |
 | ------------- | ------------------------------------------------------------ |
