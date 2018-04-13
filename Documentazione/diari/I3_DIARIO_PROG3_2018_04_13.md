@@ -1,7 +1,7 @@
-# PROGETTO | Diario di lavoro - 23.03.2018
+# PROGETTO | Diario di lavoro - 13.04.2018
 ##### Gionata Battaglioni
 ##### Lucas Previtali
-### Canobbio, [23.03.2018]
+### Canobbio, [13.04.2018]
 
 ## Lavori svolti
 
@@ -10,8 +10,8 @@ Gionata
 | Orario        | Lavoro svolto                                                |
 | ------------- | ------------------------------------------------------------ |
 | 08:15 - 11:35 | Messa a punto abiente di lavoro, download nuova libreria, aggiornamento docuementazione |
-| 13:15 - 15:15 | Modifica Trello, scrittura schema ER, realizzazione del DataBase |
-| 15:30 - 16:30 |                                                              |
+| 13:15 - 16:30 | Modifica Trello, scrittura schema ER, realizzazione del DataBase |
+
 
 
 Lucas
