@@ -15,8 +15,8 @@ Data date
 
 Impostazioni
 -
-Giorni_Arretrati int
-Refresh int
+Testo  PK varchar 
+Valore int
 
 
 
