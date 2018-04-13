@@ -20,7 +20,7 @@
 | Orario        | Lavoro svolto                                                |
 | ------------- | ------------------------------------------------------------ |
 | 08:20 - 09:05 | prove con c# per verificare il funzionamento della libreria Emgu|
-| 9:05 - 15:00  | modifica e analisi di un progetto che permette di implementare il riconoscimento facciale (ad ogni faccia viene assegnato un nome) nel nostro face detection [codice](https://www.codeproject.com/Articles/239849/Multiple-face-detection-and-recognition-in-real)|
+| 9:05 - 15:00  | modifica e analisi di un [progetto](https://www.codeproject.com/Articles/239849/Multiple-face-detection-and-recognition-in-real) che permette di implementare il riconoscimento facciale (ad ogni faccia viene assegnato un nome) nel nostro face detection|
 | 15:00 - 15:30 | commenti del docente riguardo al secondo progetto e assegnazione della nota |
 | 15:30 - 16:30 | risoluzione di vari problemi che presenta il codice scaricato |
 
