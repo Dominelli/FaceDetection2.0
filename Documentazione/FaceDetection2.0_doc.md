@@ -47,7 +47,7 @@ The result was what I expected since the beginning, our approach worked very wel
 
 ### Scopo
 
-  Lo scopo del progetto è di creare un sistema di riconoscimento facciale tramite una webcam. Questo sistema serve per quantificare il numero di persone che visitano uno stand di Espoprofessioni, visto che il progetto é stato ripreso per la modifica di eventuali errori. Lo scopo resta lo stesso ma non serivarà più per Espoprofessioni ma per contare il numero di persone in base alle faccie riconosciute in generale.Appunto il sistema deve essere in grado di riconoscere le persone che entrano nel campo visivo della webcam.
+  Lo scopo del progetto è quello di creare un sistema di riconoscimento facciale tramite una webcam. Questo sistema serve per quantificare il numero di persone che visitano uno stand di Espoprofessioni, visto che il progetto é stato ripreso per la modifica di eventuali errori. Lo scopo resta lo stesso ma non serivarà più per Espoprofessioni ma per contare il numero di persone in base alle faccie riconosciute in generale.Appunto il sistema deve essere in grado di riconoscere le persone che entrano nel campo visivo della webcam.
 
 
 ## Analisi
@@ -62,109 +62,91 @@ The result was what I expected since the beginning, our approach worked very wel
   Il committente richiede una pagina web che effettua un riconoscimento facciale. Una volta che la faccia viene riconosciuta dalla pagina viene salvata all`interno di una variabile e a sua volta salvata in un database. In base al numero di persone riconosciute e al tempo che le persone rimangono ferme davanti alla web cam viene redatto un grafico. Mentre un secondo grafico veiene redatto in base al numero di persone che sono state riconosciute dalla webcam e alla fascia oraria. 
 
 
-| ID           | REQ-001                                       |
-| ------------ | --------------------------------------------- |
-| **Nome**     | Face Detection                                |
-| **Priorità** | 1                                             |
-| **Versione** | 1.0                                           |
-| **Note**     |                                               |
-| **Sub-ID**   | Requisito                                     |
-| **001**      | Creazione macchina virtuale                   |
-| **002**      | Creazione pagina Web per webcam               |
-| **003**      | Creazione pagina Web per grafici              |
-| **004**      | Creazione pagina web per gestione dell’admin. |
-| **005**      | Creare una banca dati                         |
-| **006**      | Ricerca di nuovi volti                        |
-| **007**      | Salvataggio delle persone su DB               |
-
-
-| ID           | REQ-002                                                      |
+| ID           | REQ-001                                                      |
 | ------------ | ------------------------------------------------------------ |
 | **Nome**     | Creazione macchina virtuale                                  |
 | **Priorità** | 1                                                            |
 | **Versione** | 1.0                                                          |
 | **Note**     |                                                              |
 | **Sub-ID**   | Requisito                                                    |
-| **001**      | Si deve creazione macchina virtuale su “Virtual Box”         |
-| **002**      | Si deve installare di XAMPP v7.0.2                           |
-| **003**      | Si deve creare la struttura in cartelle che ospita i file   del progetto. |
+| **001**      | Creazione macchina virtuale su “Virtual Box”         |
+| **002**      | Installazione microsoft VisualStudio 2017                        |
 
   
 
-| ID           | REQ-003                                                  |
+| ID           | REQ-002                                                  |
 | ------------ | -------------------------------------------------------- |
 | **Nome**     | Creazione pagina Web per webcam                          |
 | **Priorità** | 1                                                        |
 | **Versione** | 1.0                                                      |
 | **Note**     |                                                          |
 | **Sub-ID**   | Requisito                                                |
-| **001**      | Si deve implementare una rappresentazione della webcam   |
-| **002**      | Si deve organizzare e realizzare una interfaccia grafica |
+| **001**      | Implementare una rappresentazione della webcam   |
+| **002**      | Organizzare e realizzare una interfaccia grafica |
 
-| ID           | REQ-004                                                      |
+| ID           | REQ-003                                                      |
 | ------------ | ------------------------------------------------------------ |
 | **Nome**     | Creazione pagina Web per grafici                             |
 | **Priorità** | 1                                                            |
 | **Versione** | 1.0                                                          |
 | **Note**     |                                                              |
 | **Sub-ID**   | Requisito                                                    |
-| **001**      | Si deve implementare la lettura dal DB                       |
-| **002**      | Si devono creare 2 grafici: Numero di persone rilevate in ogni ora del giorno. Tempo medio di una persona di fronte all’obiettivo. |
-| **003**      | Si deve poter utilizzare un form di log in per il REQ-005    |
+| **001**      | Implementare la lettura dal DB                       |
+| **002**      | Creazione dei grafici: Numero di persone rilevate in ogni ora del giorno. Tempo medio di una persona di fronte all’obiettivo. |
+| **003**      | Utilizzare un form di log in per il REQ-005    |
 
 
-| ID           | REQ-005                                                      |
+| ID           | REQ-004                                                      |
 | ------------ | ------------------------------------------------------------ |
 | **Nome**     | Creazione pagina Web per gestione dell’admin                 |
 | **Priorità** | 2                                                            |
 | **Versione** | 1.0                                                          |
 | **Note**     |                                                              |
 | **Sub-ID**   | Miglioria                                                    |
-| **001**      | Si deve creare un pannello di gestione per le impostazioni della WebCam. |
-| **002**      | Si deve creare un pannello di gestione per le impostazioni di Tracking. |
+| **001**      | Creare un pannello di gestione per le impostazioni della WebCam. |
+| **002**      | Creare un pannello di gestione per le impostazioni di Tracking. |
 
 
-| ID           | REQ-006                                                      |
+| ID           | REQ-005                                                      |
 | ------------ | ------------------------------------------------------------ |
 | **Nome**     | Creare una banca dati                                        |
 | **Priorità** | 1                                                            |
 | **Versione** | 1.0                                                          |
 | **Note**     |                                                              |
 | **Sub-ID**   | Miglioria                                                    |
-| **001**      | Si deve creare un DB che ospiterà le persone tramite: 	Tempo di fronte all’obiettivo e ora del tracking. |
+| **001**      | Creare un DB che ospiterà le persone tramite: 	Tempo di fronte all’obiettivo e ora del tracking. |
 
-| ID           | REQ-007                                                      |
+| ID           | REQ-006                                                      |
 | ------------ | ------------------------------------------------------------ |
 | **Nome**     | Ricerca di nuovi volti                                       |
 | **Priorità** | 1                                                            |
 | **Versione** | 1.0                                                          |
 | **Note**     |                                                              |
 | **Sub-ID**   | Requisito                                                    |
-| **001**      | Si deve scegliere la libreria migliore per il tracking dei volti: openCV, tracking.js,emgu.cv |
-| **002**      | Si deve implementare il codice per l’individuazione dei dati tramite libreria. |
+| **001**      | Scegliere la libreria migliore per il tracking dei volti: openCV, tracking.js,emgu.cv |
+| **002**      | Implementare il codice per l’individuazione dei dati tramite libreria. |
 | **003**      | La webcam deve eseguire la ricerca di nuovi volti ogni 15 secondi e se rileva dei volti nelle coordinate vicine a quelle vecchie, non ne terrà conto. |
 
 
-| ID           | REQ-008                                                      |
+| ID           | REQ-007                                                      |
 | ------------ | ------------------------------------------------------------ |
 | **Nome**     | Salvataggio delle persone sul DB                             |
 | **Priorità** | 1                                                            |
 | **Versione** | 1.0                                                          |
 | **Note**     |                                                              |
 | **Sub-ID**   | Miglioria                                                    |
-| **001**      | Si deve gestire il codice del programma per il corretto invio dei dati al DB. |
+| **001**      | Gestire il codice del programma per il corretto invio dei dati al DB. |
 
 
-| ID           | REQ-009                                                      |
+| ID           | REQ-008                                                      |
 | ------------ | ------------------------------------------------------------ |
 | **Nome**     | Utilizzo del prodotto su RaspBerry                           |
 | **Priorità** | 1                                                            |
 | **Versione** | 1.0                                                          |
 | **Note**     |                                                              |
 | **Sub-ID**   | Requisito                                                    |
-| **001**      | Si deve allestire un webserver Linux su RaspBerry            |
-| **002**      | Si deve trasporre l’intero codice del progetto su RaspBerry  |
-| **003**      | Si deve poter connettere 1 WebCam e 2 schermi contemporaneamente per input e output. |
+| **001**      | Allestire un webserver Linux su RaspBerry            |
+| **002**      | Trasportare l’intero codice del progetto su RaspBerry  |
 
  
 
@@ -221,20 +203,8 @@ Essendo quattro persone a lavorare in questo progetto, i costi vanno moltiplicat
 | 60            | 48   | 2       | 8640 fr. |
 
 
-#### Costo webcam:
-Dopo qualche ricerca abbiamo trovato la webcam adatta al nostro progetto e il presso é di:
-
-| Totale |
-| ------ |
-| 29 fr. |
-
-
 #### Costo totale:
-Facendo una somma dei vari totali arriviamo al costo totale finale di questo progetto.
-
-| Totale   |
-| -------- |
-| 8669 fr. |
+Facendo una somma dei vari totali e aggiungendo il costo di 29 fr. per la webcam arriviamo al costo totale finale di questo progetto cioè 8669 fr.
 
 
 ## Progettazione
@@ -455,13 +425,13 @@ Le tabelle  sottostanti rappresentano i test che abbiamo svolto in base hai requ
 | **Riferimento**      | REQ-002                                                      |
 | **Descrizione**      | Creazione macchina virtuale per gestire le cartelle su raspberry |
 | **Prerequisiti**     |                                                              |
-| **Procedura**        | - Installare un programma per gestire le macchine virtuali, noi abbuamo usato VirtualBox. - Creare una macchina virtuale linux basata su raspbian, in questo caso abbiamo usato debian |
-| **Risultati attesi** | Avere la stessa struttura di caretelle che é presente su raspbian. |
+| **Procedura**        | - Installare un programma per gestire le macchine virtuali, noi abbuamo usato VirtualBox. - Creare una macchina virtuale Windows. - Installare microsoft VisualStudio 2017.|
+| **Risultati attesi** | Avere un abiente di sviluppo pronto per iniziare la scrittura del codice |
 
 
 | Test Case            | TC-002                                                       |
 | -------------------- | ------------------------------------------------------------ |
-| **Nome**             | Creazione pagina Web per webcam                              |
+| **Nome**             | Pagina Web per webcam                              |
 | **Riferimento**      | REQ-003                                                      |
 | **Descrizione**      | Gestire il riconoscimento facciale                           |
 | **Prerequisiti**     | -                                                            |
@@ -470,7 +440,7 @@ Le tabelle  sottostanti rappresentano i test che abbiamo svolto in base hai requ
 
 | Test Case            | TC-003                                                       |
 | -------------------- | ------------------------------------------------------------ |
-| **Nome**             | Creazione pagina Web per grafici                             |
+| **Nome**             | Pagina Web per grafici                             |
 | **Riferimento**      | REQ-004                                                      |
 | **Descrizione**      | Gestire i dati mandati dalla pagina web della webcam tramite dei grafici |
 | **Prerequisiti**     | -                                                            |
@@ -479,7 +449,7 @@ Le tabelle  sottostanti rappresentano i test che abbiamo svolto in base hai requ
 
 | Test Case            | TC-004                                                       |
 | -------------------- | ------------------------------------------------------------ |
-| **Nome**             | Creazione pagina Web per gestione dell’admin                 |
+| **Nome**             | Pagina Web per gestione dell’admin                 |
 | **Riferimento**      | REQ-005                                                      |
 | **Descrizione**      | Creazione di una pagina inserente all'accesso asmin per la modifica dei parametri della webcam |
 | **Prerequisiti**     | Aver creato la pagina web per la Webcam                      |
@@ -538,7 +508,7 @@ Per noi é stata difficile la partenza, cioè suddividerci il lavoro e imparare 
 
 Ecco come sono andate le ore di lavoro, in base a quelle che abbiamo programmato prima dell`inizio del progetto.
 
-![Gantt Preventivo](immagini/GANTT_consuntivo.png)
+![Gantt Consuntivo](immagini/GANTT_consuntivo.png)
 
 ## Conclusioni
 
