@@ -5,7 +5,7 @@
 
 ## Lavori svolti
 
-Gionata
+<p><span style="color:Orange">GIONATA</span></p>
 
 | Orario        | Lavoro svolto                                                |
 | ------------- | ------------------------------------------------------------ |
@@ -14,7 +14,7 @@ Gionata
 
 
 
-Lucas
+<p><span style="color:Green">LUCAS</span></p>
 
 | Orario        | Lavoro svolto                                                |
 | ------------- | ------------------------------------------------------------ |
