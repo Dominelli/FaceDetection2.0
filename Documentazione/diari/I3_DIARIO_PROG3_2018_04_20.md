@@ -36,9 +36,10 @@ conn.ConnectionString = "Server=localhost;Database=facedetection;Trusted_Connect
  conn = new SqlConnection("Data Source=.\\MSSQLSEVER;Initial Catalog=facedetection;" +
                 " User ID= root; Password=");
 ~~~
+
 entrambi i metodi davano un errore che non permetteva la connessione (Non riusciva a trovare l'istanza di SQLServer). Quindi ho reinstallato MySqlServer 5.7 e Microsoft SQL Server Management Studio.
+
 4. la stringa di connessione funzionava solo con i database di sistema installati assieme a SQLServer (che sono database in formato .mdf), quindi ho dovuto ricreare il database facedetection in questo formato.
-5. 
 
 ##  Punto della situazione rispetto alla pianificazione
 - Nei tempi
