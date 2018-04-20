@@ -46,3 +46,4 @@ entrambi i metodi davano un errore che non permetteva la connessione (Non riusci
 
 ## Programma di massima per la prossima giornata di lavoro
 - Scrittura delle varie Query nel codice
+- Collegamento nuovo database alla pagina dei grafici
