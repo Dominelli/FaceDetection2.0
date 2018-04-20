@@ -29,9 +29,19 @@
 1. VisualStudio 2017 presenta erroi di sistema (GB), per isolare gli errori ho dovuto disinstallare il programma dal mio computer e rinstallaro. Questo procedimento ha preso diverso tempo.
 2. la visualizzazione della webcam nel form era settata di default a una risoluzione molto bassa (320x240). Cambiando questa risoluzione il face detection lagga molto, quindi abbiamo scelto per intanto una via di mezzo tra una risoluzione molto alta e quella di default (640x480).
 3. Per connettere il codice c# al database facedetection ho trovato due metodi: 
+~~~
+conn.ConnectionString = "Server=localhost;Database=facedetection;Trusted_Connection=True";
+~~~
+~~~
+ conn = new SqlConnection("Data Source=.\\MSSQLSEVER;Initial Catalog=facedetection;" +
+                " User ID= root; Password=");
+~~~
+entrambi i metodi davano un errore che non permetteva la connessione (Non riusciva a trovare l'istanza di SQLServer). Quindi ho reinstallato MySqlServer 5.7 e Microsoft SQL Server Management Studio.
+4. la stringa di connessione funzionava solo con i database di sistema installati assieme a SQLServer (che sono database in formato .mdf), quindi ho dovuto ricreare il database facedetection in questo formato.
+5. 
 
 ##  Punto della situazione rispetto alla pianificazione
 - Nei tempi
 
 ## Programma di massima per la prossima giornata di lavoro
-- -
+- Scrittura delle varie Query nel codice
