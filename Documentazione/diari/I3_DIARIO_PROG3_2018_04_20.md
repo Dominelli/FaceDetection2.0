@@ -19,15 +19,17 @@
 
 | Orario        | Lavoro svolto |
 | ------------- | ------------- |
-| 08:20 - 09:05 | -             |
-| 9:05 - 15:00  | -             |
-| 15:00 - 15:30 | -             |
-| 15:30 - 16:30 | -             |
+| 08:20 - 09:05 | rilettura e aggiunta commenti nel codice per aiutare la comprensione |
+| 9:05 - 11:35  | risoluzione di errori dati da mancanze di riferimenti a librerie necessari per il codice e modifica del form (ingrandimento e aumento della risoluzione) |
+| 13:15 - 16:30 | collegamento del codice c# al database e prova di alcuni insert|
 
 
 
 ##  Problemi riscontrati e soluzioni adottate
 1. VisualStudio 2017 presenta erroi di sistema (GB), per isolare gli errori ho dovuto disinstallare il programma dal mio computer e rinstallaro. Questo procedimento ha preso diverso tempo.
+2. la visualizzazione della webcam nel form era settata di default a una risoluzione molto bassa (320x240). Cambiando questa risoluzione il face detection lagga molto, quindi abbiamo scelto per intanto una via di mezzo tra una risoluzione molto alta e quella di default (640x480).
+3. Per connettere il codice c# al database facedetection ho trovato due metodi: 
+
 ##  Punto della situazione rispetto alla pianificazione
 - Nei tempi
 
