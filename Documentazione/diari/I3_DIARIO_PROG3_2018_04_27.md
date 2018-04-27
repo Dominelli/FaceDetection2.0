@@ -19,7 +19,7 @@
 
 | Orario        | Lavoro svolto |
 | ------------- | ------------- |
-| 08:20 - 09:05 | -             |
+| 08:20 - 11:35 | scrittura codice delle query per collegare il form al database |
 | 9:05 - 11:35  | -             |
 | 13:15 - 16:30 | -             |
 
