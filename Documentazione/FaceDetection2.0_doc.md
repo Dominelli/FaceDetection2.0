@@ -28,7 +28,7 @@
 
 ### Informazioni sul progetto
 
- - **Progetto svolto da:** Gionata Battaglioni, Fabio Gola,Gabriele Dominelli, Lucas Previtali
+ - **Progetto svolto da:** Gionata Battaglioni, Lucas Previtali
  - **Mandanti del progetto:** Luca Muggiasca
  - **Docente Responsabile:** Luca Muggiasca
  - **Scuola:** Arti e Mestieri Trevano
