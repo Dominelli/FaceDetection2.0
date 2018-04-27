@@ -64,13 +64,12 @@ The result was what I expected since the beginning, our approach worked very wel
 
 | ID           | REQ-001                                                      |
 | ------------ | ------------------------------------------------------------ |
-| **Nome**     | Creazione macchina virtuale                                  |
+| **Nome**     | Valutazione della libreria da utilizzare                     |
 | **Priorità** | 1                                                            |
 | **Versione** | 1.0                                                          |
 | **Note**     |                                                              |
 | **Sub-ID**   | Requisito                                                    |
-| **001**      | Creazione macchina virtuale su “Virtual Box”         |
-| **002**      | Installazione microsoft VisualStudio 2017                        |
+| **001**      | Valutare le varie librerie che permettono il traking         |
 
   
 
@@ -107,16 +106,8 @@ The result was what I expected since the beginning, our approach worked very wel
 | **002**      | Creare un pannello di gestione per le impostazioni di Tracking. |
 
 
-| ID           | REQ-005                                                      |
-| ------------ | ------------------------------------------------------------ |
-| **Nome**     | Creare una banca dati                                        |
-| **Priorità** | 1                                                            |
-| **Versione** | 1.0                                                          |
-| **Note**     |                                                              |
-| **Sub-ID**   | Miglioria                                                    |
-| **001**      | Creare un DB che ospiterà le persone tramite: 	Tempo di fronte all’obiettivo e ora del tracking. |
 
-| ID           | REQ-006                                                      |
+| ID           | REQ-005                                                      |
 | ------------ | ------------------------------------------------------------ |
 | **Nome**     | Ricerca di nuovi volti                                       |
 | **Priorità** | 1                                                            |
@@ -128,17 +119,7 @@ The result was what I expected since the beginning, our approach worked very wel
 | **003**      | La webcam deve eseguire la ricerca di nuovi volti ogni 15 secondi e se rileva dei volti nelle coordinate vicine a quelle vecchie, non ne terrà conto. |
 
 
-| ID           | REQ-007                                                      |
-| ------------ | ------------------------------------------------------------ |
-| **Nome**     | Salvataggio delle persone sul DB                             |
-| **Priorità** | 1                                                            |
-| **Versione** | 1.0                                                          |
-| **Note**     |                                                              |
-| **Sub-ID**   | Miglioria                                                    |
-| **001**      | Gestire il codice del programma per il corretto invio dei dati al DB. |
-
-
-| ID           | REQ-008                                                      |
+| ID           | REQ-006                                                      |
 | ------------ | ------------------------------------------------------------ |
 | **Nome**     | Utilizzo del prodotto su RaspBerry                           |
 | **Priorità** | 1                                                            |
