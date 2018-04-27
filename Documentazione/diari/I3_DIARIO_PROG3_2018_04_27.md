@@ -12,7 +12,7 @@
 | ------------- | ------------------------------------------------------------ |
 | 08:15 - 11:35 | Ripresa raspberry, costruzione postazione di lavoro, pulizia del raspberry con vari upgrade e update, eliminazione dei programmi screach-libreoffice-wolfram-minecraft-sonic. Ora il raspberry é notevolmente più veloce. |
 | 13:15 - 15:00 | prova del file .exe sul rasberry usando mono |
-| 15:00 - 16:30 | - |
+| 15:00 - 16:30 | ho provato a utilizzare mono usando programmi paralleli per far funzionare il .exe, ma dopo vari programmi e svariate ricerche ho deciso di disinstallare raspbian e ho installato windown 10 IoT su raspberry in modo da facilitare l utilizzo dei .exe |
 
 
 [LUCAS](https://github.com/lucasprevitali)
