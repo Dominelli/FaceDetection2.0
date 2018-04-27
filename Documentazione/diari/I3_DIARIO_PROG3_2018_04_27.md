@@ -27,7 +27,9 @@
 
 
 ##  Problemi riscontrati e soluzioni adottate
-1. 
+1. gli insert non funzionavano correttamente perché per aggiungere dei parametri usavo il medoto Parameters.Add (che è ormai obsoleto) invece di Parameters.AddWithValue
+2. l'installazione di mono su rasbian usando il comando mono-runtime non
+
 ##  Punto della situazione rispetto alla pianificazione
 - Nei tempi
 
