@@ -29,13 +29,13 @@
 ##  Problemi riscontrati e soluzioni adottate
 1. gli insert non funzionavano correttamente perché per aggiungere dei parametri usavo il medoto Parameters.Add (che è ormai obsoleto) invece di Parameters.AddWithValue
 2. l'installazione di mono su rasbian usando il comando apt-get install mono-runtime non funzionava, su internet abbiamo trovato un comando molto simile (apt-get install mono-complete) che ci ha permesso di eseguire l'installazione correttamente.
-3. Per facilitare l'utilizzo dei file eseguibili .exe su rasberry, abbiamo deciso di installarci un sistema windows (10IOT), l'installazione però probabilmente non è stata eseguita in modo corretto e questo ha generato un errore che non permetteva di proseguire.
+3. Per facilitare l'utilizzo dei file eseguibili .exe su rasberry, abbiamo deciso di installarci un sistema windows (10 IoT), l'installazione però probabilmente non è stata eseguita in modo corretto e questo ha generato un errore che non permetteva di proseguire.
 
 ##  Punto della situazione rispetto alla pianificazione
 - Nei tempi
 
 ## Programma di massima per la prossima giornata di lavoro
 - ottimizazione del database
-- terminare l'installazione di Windows10IOT su raspberry
+- terminare l'installazione di Windows 10 IoT su raspberry
 - prova del programma su rasberry
 - inizio collegamento tra il database e la pagina dei grafici
