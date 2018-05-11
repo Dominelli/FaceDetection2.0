@@ -459,7 +459,7 @@ Per rimediare abbiamo ulitizzato un computer prestatoci dalla scuola.
 
 ### Mancanze e limitazioni conosciute
 
-Per noi é stata difficile la partenza, cioè suddividerci il lavoro e imparare a lavorare come un team. Una volta capito il vero funzionamento del lavoro di squadra e una volta che abbiamo suddiviso i compiti siamo riusciti a arrivare ad avere un vero e proprio team organizzato. Per quanto riguarda le competenze informatiche abbiamo avuto qualche difficolta con l` utilizzo di programmi o linguaggi che non abbiamo mai usato. Come per esempio raspberry, abbiamo dovuto installare il suo sistema operativo (raspbian) e installare un webserver su esso.
+Per noi é stata difficile la partenza, cioè suddividerci il lavoro e imparare a lavorare in coppia, é stato difficile perche durante l`anno abbiamo svolto lo stesso progetto ma con un gruppo di quattro persone mantre ora essendo stati soltanto in due, abbiamo fatto un po fatica a bilanciarci il carico di lavoro. Una volta capito il vero funzionamento del lavoro di squadra e una volta che abbiamo suddiviso i compiti siamo riusciti a arrivare ad avere un vero e proprio team organizzato. Per quanto riguarda le competenze informatiche abbiamo avuto qualche difficolta con l` utilizzo di programmi o linguaggi che non abbiamo mai usato. Come per esempio raspberry, abbiamo dovuto installare il suo sistema operativo (raspbian) e trovare un modo per poter avviare i programmi con estenzione exe.
 
 ## Consuntivo
 
@@ -469,38 +469,33 @@ Ecco come sono andate le ore di lavoro, in base a quelle che abbiamo programmato
 
 ## Conclusioni
 
-La soluzione che abbiamo portato ci soddisfa ma non al 100%. Il nostro programma avrà sicuramente un impatto positivo con le persone che lo proveranno, porterà molto divertimento. Noi non pensiamo che il nostro programma cambierà il mondo ma siamo sicuri che porterà una piccola svolta, sicurament più per noi stessi che per gli altri. Possiamo definire questo progetto un successo importante, più che successo questo progetto ci porta un forte orgoglio personale sopratutto perchè verrà utilizzato da gente esterna alla nostra scuola. Questo progetto é una grande aggiunta alla nostra crescita professionale, ci ha dato molto questo progetto sia come competenze lavorative che come competenze sociali.
+La soluzione che abbiamo portato ci soddisfa, é sicurmante molto più soddisfacente che la prima versione che abbiamo portato. Il nostro programma avrà sicuramente un impatto positivo con le persone che lo proveranno, porterà molto divertimento. Noi non pensiamo che il nostro programma cambierà il mondo ma siamo sicuri che porterà una piccola svolta, sicurament più per noi stessi che per gli altri. Possiamo definire questo progetto un successo importante, più che successo questo progetto ci porta un forte orgoglio personale sopratutto perchè siamo riusciti a svolgere un applicazione molto più prestante di quella precedentemente realizzata con la metà dei collaboratori. Questo progetto é una grande aggiunta alla nostra crescita professionale, ci ha dato molto questo progetto sia come competenze lavorative che come competenze sociali.
 
 
 ### Sviluppi futuri
- Come miglioria potrebbe essere implementato in una scala molto più grande rispetto che un semplice schermo con una webcam. Sarebbe bello poter collegare il nostro progetto su delle videocamere reali in modo da riuscire a riconoscere una quantità maggiore di volti. Mentre come sviluppo futuro vorremmo riuscire a migliorare il nostro prodotto, in modo da avere un programma che funzioni alla perfezione.
+ Come miglioria potrebbe essere implementato in una scala molto più grande rispetto che un semplice schermo con una webcam. Sarebbe bello poter collegare il nostro progetto su delle videocamere reali in modo da riuscire a riconoscere una quantità maggiore di volti. Mentre come sviluppo futuro vorremmo riuscire integrare la nostra applicazione nel mondo degli smartphone.
 
 ### Considerazioni personali
-  Con questo progetto abbiamo imparato cosa vuol dire lavoro di squadra, di quanto esso sia estremamente importante e di come con dei collaboratori sia più facile e eccitante lavorare.
+  Con questo progetto abbiamo imparato cosa vuol dire lavoro di coppia, di quanto esso sia estremamente importante e di come con un collaboratore sia più facile e motivante lavorare.
 
 ## Sitografia
 
-- https://trackingjs.com/, *Tracking.js
+- https://opencv.org/, *OpenCv
       La libreira per implementare il riconoscimento facciale.
 
-- https://www.wikihow.it/Creare-un-Web-Server-su-Raspberry-Pi, *Manuale web-server linux
-    Abbiamo usato questo sito per creare un web server su raspberry.
+- https://www.mono-project.com/docs/getting-started/install/linux/, *Manuale di installazione del programma mono, grazie a questo programma il raspberry é in grado di avviare i file .exe.
 
 - https://www.raspberrypi.org/downloads/raspbian/, *Sitema operativo Raspbian
     Abbamo scaricato il sistema operativo direttamente dal sito del produttore di raspberry.
 
 - http://www.vemp.org/raspberrypi/preparare-una-card-sd-con-raspbian/, *Programma per caricare il .img di raspbian su raspberry.
-- https://www.w3schools.com/js/, *Guida JavaScript
-    Abbiamo utilizzato questa guida per eventuali errori o mancanze delle nostre competenze sul linguaggio.
 
-- https://www.w3schools.com/php/, *Giuida Php
-    Abbiamo utlizzato questa guida in caso di mancanze o scarse competenze.
 - http://www.chartjs.org/, *pagina per i grafici
 
 
 ## Allegati
 
-Elenco degli allegati, esempio:
+Elenco degli allegati:
 
 -   Diari di lavoro
 
