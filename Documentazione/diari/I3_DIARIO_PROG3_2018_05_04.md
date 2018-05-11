@@ -34,7 +34,7 @@
 
 ##  Punto della situazione rispetto alla pianificazione
 - Nei tempi
-
+ 
 ## Programma di massima per la prossima giornata di lavoro
 - Finire il progetto
 
