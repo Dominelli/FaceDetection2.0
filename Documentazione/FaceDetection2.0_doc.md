@@ -40,14 +40,14 @@
 
 ### Abstract
 
-At the beginning  teachers in charge showed us the project, how it had to be done and what
-we would have to do to keep an appropriate organization. At the beginning we had some trouble because we didn't know where to start. The main problem was connect the webcam page at the database. Another problem was lerning about the raspberry, how it work and how use it.
+Lucas and I decided to take over the project that we had carried out in groups. Since the project is not finished we have chosen to resume it and put it in place. To do this we decided to restart the whole project from the beginning.
+It was not easy to redesign everything because initially this project was designed to be carried out by four people and we are two. So we had some problems with load balancing.
 The result was what I expected since the beginning, our approach worked very well except, as said before, we had to invest maybe too much time consulting with various guides.
 
 
 ### Scopo
 
-  Lo scopo del progetto è quello di creare un sistema di riconoscimento facciale tramite una webcam. Questo sistema serve per quantificare il numero di persone che visitano uno stand di Espoprofessioni, visto che il progetto é stato ripreso per la modifica di eventuali errori. Lo scopo resta lo stesso ma non serivarà più per Espoprofessioni ma per contare il numero di persone in base alle faccie riconosciute in generale.Appunto il sistema deve essere in grado di riconoscere le persone che entrano nel campo visivo della webcam.
+  Lo scopo del progetto è quello di realizzare un sistema di riconoscimento facciale tramite una webcam. Questo sistema serve per quantificare il numero di persone che visitano uno stand di Espoprofessioni, visto che il progetto é stato ripreso per la modifica di eventuali errori. Lo scopo resta lo stesso ma non serivarà più per Espoprofessioni ma per contare il numero di persone in base alle faccie riconosciute in generale. Appunto il sistema deve essere in grado di riconoscere le persone che entrano nel campo visivo della webcam.
 
 
 ## Analisi
@@ -75,7 +75,7 @@ The result was what I expected since the beginning, our approach worked very wel
 
 | ID           | REQ-002                                                  |
 | ------------ | -------------------------------------------------------- |
-| **Nome**     | Creazione pagina Web per webcam                          |
+| **Nome**     | Creazione di un supporto grafico del programma           |
 | **Priorità** | 1                                                        |
 | **Versione** | 1.0                                                      |
 | **Note**     |                                                          |
@@ -94,20 +94,7 @@ The result was what I expected since the beginning, our approach worked very wel
 | **002**      | Creazione dei grafici: Numero di persone rilevate in ogni ora del giorno. Tempo medio di una persona di fronte all’obiettivo. |
 | **003**      | Utilizzare un form di log in per il REQ-005    |
 
-
 | ID           | REQ-004                                                      |
-| ------------ | ------------------------------------------------------------ |
-| **Nome**     | Creazione pagina Web per gestione dell’admin                 |
-| **Priorità** | 2                                                            |
-| **Versione** | 1.0                                                          |
-| **Note**     |                                                              |
-| **Sub-ID**   | Miglioria                                                    |
-| **001**      | Creare un pannello di gestione per le impostazioni della WebCam. |
-| **002**      | Creare un pannello di gestione per le impostazioni di Tracking. |
-
-
-
-| ID           | REQ-005                                                      |
 | ------------ | ------------------------------------------------------------ |
 | **Nome**     | Ricerca di nuovi volti                                       |
 | **Priorità** | 1                                                            |
@@ -119,7 +106,8 @@ The result was what I expected since the beginning, our approach worked very wel
 | **003**      | La webcam deve eseguire la ricerca di nuovi volti ogni 15 secondi e se rileva dei volti nelle coordinate vicine a quelle vecchie, non ne terrà conto. |
 
 
-| ID           | REQ-006                                                      |
+| ID           | REQ-005
+|
 | ------------ | ------------------------------------------------------------ |
 | **Nome**     | Utilizzo del prodotto su RaspBerry                           |
 | **Priorità** | 1                                                            |
@@ -132,10 +120,6 @@ The result was what I expected since the beginning, our approach worked very wel
  
 
 
-### Use case
-
-I casi d’uso rappresentano l’interazione tra i vari attori e le
-funzionalità del prodotto.
 
 ### Pianificazione
 
@@ -157,13 +141,13 @@ Come prodotti fisici abbiamo usato i seguenti:
 | Monitor HDMI  |             Asus |
 | Webcam (C270) |         Logitech |
 
-SCRIVERE SPIEGAZIONE_______________________________________
+Il Raspberry lo abbiamo utilizzato unicamente come mezzo di supporto del programma. Appunto il programma vero e proprio é stato realizzato una libreria per C# chiamata OpenCV.
 
 | Pacchetto | Versione |
 | :-------- | -------: |
-| Apache    |   2.4.25 |
-| Php       |   7.0.19 |
-| MariaDB   |  10.1.23 |
+| OpenCV    |   3.4.1 |
+| Microsoft Visual Studio 2017 Enterprise |   15.7 |
+
 
 
 ### Analisi dei costi
@@ -412,12 +396,12 @@ Le tabelle  sottostanti rappresentano i test che abbiamo svolto in base hai requ
 
 | Test Case            | TC-002                                                       |
 | -------------------- | ------------------------------------------------------------ |
-| **Nome**             | Pagina Web per webcam                              |
+| **Nome**             | Supporto grafico dell`applicazione			      |
 | **Riferimento**      | REQ-003                                                      |
 | **Descrizione**      | Gestire il riconoscimento facciale                           |
 | **Prerequisiti**     | -                                                            |
-| **Procedura**        | - Scaricare la libreria traking.js - Modificare la libreira con il linguaggio JavaScript. |
-| **Risultati attesi** | Avere la pagina web che riconosce le faccie e manda le informazioni al database |
+| **Procedura**        | - Scaricare la libreria OpenCV - Modificare la libreira con il linguaggio C#. |
+| **Risultati attesi** | Avere un applicazione che é in grado di rinoscere le faccie e salvarle su un database |
 
 | Test Case            | TC-003                                                       |
 | -------------------- | ------------------------------------------------------------ |
@@ -425,28 +409,21 @@ Le tabelle  sottostanti rappresentano i test che abbiamo svolto in base hai requ
 | **Riferimento**      | REQ-004                                                      |
 | **Descrizione**      | Gestire i dati mandati dalla pagina web della webcam tramite dei grafici |
 | **Prerequisiti**     | -                                                            |
-| **Procedura**        | - Creare i grafici - Prendere i dati dal database e inserirli all`inerno dei grafici. |
+| **Procedura**        | - Realizzare dei grafici tramite la libreria chart.js - Prendere i dati dal database e inserirli all`inerno dei grafici. |
 | **Risultati attesi** | I grafici vengono mostrati correttamente in base hai dati presi dal database. |
 
+
+METTERE A POSTO IL REQUISITO QUATTRO, LA PROCEDURA
 | Test Case            | TC-004                                                       |
 | -------------------- | ------------------------------------------------------------ |
-| **Nome**             | Pagina Web per gestione dell’admin                 |
-| **Riferimento**      | REQ-005                                                      |
-| **Descrizione**      | Creazione di una pagina inserente all'accesso asmin per la modifica dei parametri della webcam |
-| **Prerequisiti**     | Aver creato la pagina web per la Webcam                      |
-| **Procedura**        | - Creare un login con l'uso di JavaScript - Gestire la pagina Amministratore inserendo i parametri di modifica. |
-| **Risultati attesi** | L'utente admin riesce a accedere alla pagina e a modificare i parametri. |
-
-| Test Case            | TC-005                                                       |
-| -------------------- | ------------------------------------------------------------ |
-| **Nome**             | Creare una banca dati                                        |
+| **Nome**             | Database                                      |
 | **Riferimento**      | REQ-006                                                      |
-| **Descrizione**      | Creazione di una bancadati che contiene i dati raccolti dalla pagina web della Webcam |
-| **Prerequisiti**     | Aver creato la pagina della webCam                           |
+| **Descrizione**      | Realizzazione di una bancadati che contiene i dati raccolti dalla pagina web della Webcam |
+| **Prerequisiti**     | L`applicazione del rilevamento facciale deve essere conclusa e funzionante |
 | **Procedura**        | - Scaricare un programma per creare il database, noi abbiamo utlitzzato Heidi - Cre<re il database con gli stessi parametri della libreira presa e del codice scritto nella pagian web della Webcam. |
 | **Risultati attesi** | Il database riesce a prendere i dati delle pagine prescritte |
 
-| Test Case            | TC-006                                                       |
+| Test Case            | TC-005                                                       |
 | -------------------- | ------------------------------------------------------------ |
 | **Nome**             | Ricerca di nuovi volti                                       |
 | **Riferimento**      | REQ-007                                                      |
@@ -455,7 +432,7 @@ Le tabelle  sottostanti rappresentano i test che abbiamo svolto in base hai requ
 | **Procedura**        | - Aver installato la libreria tracking.js - Gestire il riconoscimento facciale tramite JavaScript |
 | **Risultati attesi** | La pagina della Webcam é in grado di riconoscre i volti      |
 
-| Test Case            | TC-007                                                       |
+| Test Case            | TC-006                                                       |
 | -------------------- | ------------------------------------------------------------ |
 | **Nome**             | Salvataggio delle persone sul DB                             |
 | **Riferimento**      | REQ-008                                                      |
@@ -464,7 +441,7 @@ Le tabelle  sottostanti rappresentano i test che abbiamo svolto in base hai requ
 | **Procedura**        | - Collegare il database alle pagine tramite php              |
 | **Risultati attesi** | I dati presi dalla webcam sono presenti all`interno del databse |
 
-| Test Case            | TC-008                                                       |
+| Test Case            | TC-007                                                       |
 | -------------------- | ------------------------------------------------------------ |
 | **Nome**             | Utilizzo del prodotto su RaspBerry                           |
 | **Riferimento**      | REQ-009                                                      |
