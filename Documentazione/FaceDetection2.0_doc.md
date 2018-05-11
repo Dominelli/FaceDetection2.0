@@ -62,24 +62,24 @@ The result was what I expected since the beginning, our approach worked very wel
   Il committente richiede una pagina web che effettua un riconoscimento facciale. Una volta che la faccia viene riconosciuta dalla pagina viene salvata all`interno di una variabile e a sua volta salvata in un database. In base al numero di persone riconosciute e al tempo che le persone rimangono ferme davanti alla web cam viene redatto un grafico. Mentre un secondo grafico veiene redatto in base al numero di persone che sono state riconosciute dalla webcam e alla fascia oraria. 
 
 
-| ID           | REQ-001                                                      |
-| ------------ | ------------------------------------------------------------ |
-| **Nome**     | Valutazione della libreria da utilizzare                     |
-| **Priorità** | 1                                                            |
-| **Versione** | 1.0                                                          |
-| **Note**     |                                                              |
-| **Sub-ID**   | Requisito                                                    |
-| **001**      | Valutare le varie librerie che permettono il traking         |
+| ID           | REQ-001                                              |
+| ------------ | ---------------------------------------------------- |
+| **Nome**     | Valutazione della libreria da utilizzare             |
+| **Priorità** | 1                                                    |
+| **Versione** | 1.0                                                  |
+| **Note**     |                                                      |
+| **Sub-ID**   | Requisito                                            |
+| **001**      | Valutare le varie librerie che permettono il traking |
 
   
 
-| ID           | REQ-002                                                  |
-| ------------ | -------------------------------------------------------- |
-| **Nome**     | Creazione di un supporto grafico del programma           |
-| **Priorità** | 1                                                        |
-| **Versione** | 1.0                                                      |
-| **Note**     |                                                          |
-| **Sub-ID**   | Requisito                                                |
+| ID           | REQ-002                                          |
+| ------------ | ------------------------------------------------ |
+| **Nome**     | Creazione di un supporto grafico del programma   |
+| **Priorità** | 1                                                |
+| **Versione** | 1.0                                              |
+| **Note**     |                                                  |
+| **Sub-ID**   | Requisito                                        |
 | **001**      | Implementare una rappresentazione della webcam   |
 | **002**      | Organizzare e realizzare una interfaccia grafica |
 
@@ -90,9 +90,9 @@ The result was what I expected since the beginning, our approach worked very wel
 | **Versione** | 1.0                                                          |
 | **Note**     |                                                              |
 | **Sub-ID**   | Requisito                                                    |
-| **001**      | Implementare la lettura dal DB                       |
+| **001**      | Implementare la lettura dal DB                               |
 | **002**      | Creazione dei grafici: Numero di persone rilevate in ogni ora del giorno. Tempo medio di una persona di fronte all’obiettivo. |
-| **003**      | Utilizzare un form di log in per il REQ-005    |
+| **003**      | Utilizzare un form di log in per il REQ-005                  |
 
 | ID           | REQ-004                                                      |
 | ------------ | ------------------------------------------------------------ |
@@ -106,15 +106,15 @@ The result was what I expected since the beginning, our approach worked very wel
 | **003**      | La webcam deve eseguire la ricerca di nuovi volti ogni 15 secondi e se rileva dei volti nelle coordinate vicine a quelle vecchie, non ne terrà conto. |
 
 
-| ID           | REQ-005						      |
-| ------------ | ------------------------------------------------------------ |
-| **Nome**     | Utilizzo del prodotto su RaspBerry                           |
-| **Priorità** | 1                                                            |
-| **Versione** | 1.0                                                          |
-| **Note**     |                                                              |
-| **Sub-ID**   | Requisito                                                    |
-| **001**      | Allestire un webserver Linux su RaspBerry            |
-| **002**      | Trasportare l’intero codice del progetto su RaspBerry  |
+| ID           | REQ-005                                               |
+| ------------ | ----------------------------------------------------- |
+| **Nome**     | Utilizzo del prodotto su RaspBerry                    |
+| **Priorità** | 1                                                     |
+| **Versione** | 1.0                                                   |
+| **Note**     |                                                       |
+| **Sub-ID**   | Requisito                                             |
+| **001**      | Allestire un webserver Linux su RaspBerry             |
+| **002**      | Trasportare l’intero codice del progetto su RaspBerry |
 
  
 
@@ -124,7 +124,7 @@ The result was what I expected since the beginning, our approach worked very wel
 
 Questo é il Gantt che abbiamo realizzato in base alla lista dei requisiti che abbiamo redatto e al tempo a disposizione.
 
-![Gantt Preventivo](progettazione/Gantt.png)
+![Gantt Preventivo](Gantt/Gantt.png)
 
 
 
@@ -142,10 +142,10 @@ Come prodotti fisici abbiamo usato i seguenti:
 
 Il Raspberry lo abbiamo utilizzato unicamente come mezzo di supporto del programma. Appunto il programma vero e proprio é stato realizzato una libreria per C# chiamata OpenCV.
 
-| Pacchetto | Versione |
-| :-------- | -------: |
-| OpenCV    |   3.4.1 |
-| Microsoft Visual Studio 2017 Enterprise |   15.7 |
+| Pacchetto                               | Versione |
+| :-------------------------------------- | -------: |
+| OpenCV                                  |    3.4.1 |
+| Microsoft Visual Studio 2017 Enterprise |     15.7 |
 
 
 
@@ -175,69 +175,67 @@ Facendo una somma dei vari totali e aggiungendo il costo di 29 fr. per la webcam
 
 ### Design dei dati e database
 
-Il database che abbiamo creato è molto basico. Presenta due tabelle, la tabella Amministratore dove vengono contenuti i seguenti campi.
+Il database che abbiamo realizzato non é molto complesso. Presenta soltanto le tabelle necessarie al corretto funzionamento. Che sono: 
 
-```sql
+Impostazioni
 
-(NomeUtente(PK),Id_WebCam(FK),Password,Densità_Bordo,
- Conteggio_Secondi, Dimensione_step,Scala_iniziale)
- 
-```
+![tr_impostazion](/Users/gionatabattaglioni/Desktop/FD_V2/immagni_utili/str_impostazioni.jpeg)
 
-Mentre la seconda tabella chiamata WebCam che contiene:
+Inserimento delle facce
 
-```sql
+![tr_inserFac](/Users/gionatabattaglioni/Desktop/FD_V2/immagni_utili/str_inserFace.jpeg)
 
-(Id_Webcam(PK),Orario_inizio,Orario_fine,Data)
+Tempo della visita
 
-```
-Le due tabelle sono collegate tramite una relazione molti a uno chiamata "può avere".
+![tr_tempo_visit](/Users/gionatabattaglioni/Desktop/FD_V2/immagni_utili/str_tempo_visita.jpeg)
+
+
 
 ### Schema E-R, schema logico e descrizione.
 
-Questo é il diagramma ER del database generato per consentire lo scambio dei dati tramite le varie pagine web.
+Questo é il diagramma ER del database generato per consentire lo scambio dei dati tramite la pagina web dei grafici e l`applicazione in C#.
 
-![Pagina WebCam](immagini/schemaER.png)
+![b_e](/Users/gionatabattaglioni/Desktop/FD_V2/immagni_utili/db_er.png)
+
+
 
 ### Design delle interfacce
 
-Prima di iniziare a scrivere il codice abbiamo scelto assime al gruppo una struttura base sel sito, di come vorremmo che esso diventi. 
-Per la pagina che riguarda la webcam, cioè dove l`utente vede sè stesso abbiamo pensato a un approccio molto minimale.
+Prima di iniziare a scrivere il codice abbiamo pensato a un approccio molto simile a quello del progetto precedente ma con dei cambiamenti. Avendo scelto un altra libreria abbiamo cambiato anche il linguaggio di scrittura del codice. Quindi l` interfaccia grafica si presenta così:
 
-![Pagina WebCam](immagini/MockupCam.PNG)
+![ebcamVisua](/Users/gionatabattaglioni/Desktop/FD_V2/immagni_utili/webcamVisual.jpeg)
 
-Mentre per la pagina dove verranno inseriti i grafici abbiamo pensato a un approccio un po meno minimale ma più adatto alla situazione.
 
-![Pagina Gafici](immagini/MockuoGrafici.png)
 
-Per la terza e ultima pagina cioè la pagina dove l` amminitratore potrà cambiare le impostazioni della webcam o della pagina. Come prima cosa dovrà coparire la pagina di login:
+Per quello che concerne la pagina dei grafici abbiamo deciso di tenere la stessa struttura ma di cambiare un po la grafica, ponendo i due grafici come se forssero un confronto quindi uno da parte all`altro e non più uno sopra e uno sotto.
 
-![Pagina Gafici](immagini/Mockup_Login.png)
+![ockupGrafic](/Users/gionatabattaglioni/Desktop/FD_V2/immagni_utili/MockupGrafici.png)
 
-Secondariamente una volta effettuato il login. L` amministratore avrà il diritto di cambiare le impostazioni a suo piacimento.
 
-![Pagina Gafici](immagini/Mockup_Settings.png)
 
 ## Implementazione
 
 ### Supporto
 
-Inizialmente abbiamo optato per utilizzare un raspberry dove avremmo caricato tutti i file inerenti al progetto. Così abbiamo recuperato in raspberry e lo abbiamo allestito a mo di webserver. Una volta eseguiti i test su raspberry abbiamo notato che non era abbastanza potente per poter ospitare un progetto come il nostro. Quindi abbiamo spostato tutto su un computer portatile offertoci dalla scuola. Sul computer abbiamo scaricato un programma che lo rende webserver chiamato [USB_SERVER](http://www.usbwebserver.net/) versione 8.5. Una volta fatto ciò abbiamo caricato.
+Inizialmente abbiamo optato per utilizzare un raspberry dove avremmo caricato tutti i file inerenti al progetto. Così abbiamo recuperato un raspberry e lo abbiamo scaricato i porgrammi necessari per far si che il raspberry sia in grado di eseguire i file .exe, abbiamo avuro bisogno di fare questa mogliroria perchè aprire scaricare visual studio sul raspberry risultava troppo pesante e lo avrebbe rallentato troppo. In questo modo siamo in grado di avere una piattaforma fissa, cioè avere una postazione fissa e in caso facimente trasferibile.
 
-### Creazione pagina WebCam
+### Applicazione di riconoscimento facciale
 
-La pagina della WebCam è la pagina che dirige tutte le operazioni.
-Prima di tutto abbiamo scelto di utilizzare la libreria di [tracking.js](https://trackingjs.com/) per gestire il riconoscimento facciale. Da una piccola [struttura di base trovata sul sito principale](https://trackingjs.com/examples/face_camera.html) è ora necessario aggiungere una qualche riga di codice in più necessaria alla corretta registrazione dei volti sul DataBase:
+L`applicazione é la parte principale del progetto. Il programma una volta avviato é in grado di riconoscere le facce che trova davanti alla webcam, inoltre é in grado di salvare le facce scattando una foto. Una volta che la foto é stata scattata é possibile scviere il proprio nome in un campo di testo. Una volta che il nome é stato scritto il nostro programma rinoscerà sempre la persona salvata scrivendo il nome sopra il rettangolo di riconoscimento.
+
+Eccon in poche parloe cosa é in grado di fare la nostra applicazione:
+
 1. Id univoco per ogni persona rilevata dalla WebCam.
 2. Orario nel quale una persona viene specchiata.
 3. Orario di fine del tracking
 4. Giorno in cui è stato eseguito il tracking
+5. Salvataggio della persona sottoforma di fotografia e indicizzazione della persona tramite al nome 
 
 **Ognuna di queste informazioni saranno poi fondamentali per la creazione dei grafici di statistica!**
 
-Così è come la pagina mostrala sua forma:
+Così è come la pagina mostrala sua forma:![ebcamTes](/Users/gionatabattaglioni/Desktop/FD_V2/immagni_utili/webcamTest.jpeg)
 
-![SO WebCam](immagini/paginaWebCam.PNG)
+
 
 Con il corretto rilevamento di ogni faccia sullo schermo (contenuto in un oggetto "rect"), viene eseguito un codice JavaScript. Per questa operazione si utilizza un canvas su HTML (qui chiamato "context") che permette di disegnare sullo schermo figure in maniera semplice.
 Il codice qui riportato permette di definire i colori del rettangolo (bordo e testo), disegnarlo e scrivere del testo di informazioni (come l'ID attribuito alle facce e le coordinate che lo localizzano).
@@ -318,16 +316,15 @@ var dataNumeroVisite = {
 Questo è il risultato ottenuto:
 
 
-![Pagina Admin](immagini/PaginaGrafici.PNG)
 
 
 Da questa pagina è anche possibile per l'admin eseguire l'accesso. L'accesso avviene tramite un pulsante (che mostra la scritta "Login") 
 
-![Pulsante Login](immagini/bottoneLogin.PNG)
+
 
 dopo aver premuto il pulsante appare un form che permette di inserire i dati. I dati richiesti sono semplicemente username e password. 
 
-![form login](immagini/loginAdmin.PNG)
+
 
 Per verificare i dati è richiesto di premere il pulsante login. Se i dati inseriti sono validi verrà caricata in una nuova scheda la pagina dell'admin.
 
@@ -339,7 +336,7 @@ La pagina dell'admin serve per permettere di modificare alcune impostazioni rela
 3. Step size
   La prima impostazione permette di cambiare la densità del rettangolo che si crea attorno alle faccie individuate, la seconda serve per definire la larghezza del rettangolo e la terza permette di modificare la frequenza con la quale aggiornare il frame della pagina.
 
-![Pagina Admin](immagini/paginaAdmin.PNG)
+
 
 per immettere i valori abbiamo usato tre input di tipo range, il valore scelto viene mostrato all'interno di altri tre input, di tipo textbox.
 
@@ -364,15 +361,13 @@ Per far si che le pagine comunicano e si scambino i dati tra di solo é stato ne
 Per crearlo abbiamo usato Heidi versione 9.4.0.5125. Heidi è un programma che permette di creare database tramite un interfaccia grafica.
 Ecco come si presenta il database su Heidi.
 
-![SO Caricamento](immagini/dbFace.png)
+
 
 La tabella Webcam si presenta così:
 
-![SO Caricamento](immagini/webcamDB.png)
-
 Mentre la tabella amministratore si presenta in questo modo:
 
-![SO Caricamento](immagini/amministratoreDB.png)
+
 
 Ora abbiamo un database in grado di comunicare i propri dati.
 
@@ -389,13 +384,13 @@ Le tabelle  sottostanti rappresentano i test che abbiamo svolto in base hai requ
 | **Riferimento**      | REQ-001                                                      |
 | **Descrizione**      | Creazione macchina virtuale per gestire le cartelle su raspberry |
 | **Prerequisiti**     |                                                              |
-| **Procedura**        | - Installare un programma per gestire le macchine virtuali, noi abbuamo usato VirtualBox. - Creare una macchina virtuale Windows. - Installare microsoft VisualStudio 2017.|
+| **Procedura**        | - Installare un programma per gestire le macchine virtuali, noi abbuamo usato VirtualBox. - Creare una macchina virtuale Windows. - Installare microsoft VisualStudio 2017. |
 | **Risultati attesi** | Avere un abiente di sviluppo pronto per iniziare la scrittura del codice |
 
 
 | Test Case            | TC-002                                                       |
 | -------------------- | ------------------------------------------------------------ |
-| **Nome**             | Supporto grafico dell`applicazione			      |
+| **Nome**             | Supporto grafico dell`applicazione                           |
 | **Riferimento**      | REQ-002                                                      |
 | **Descrizione**      | Gestire il riconoscimento facciale                           |
 | **Prerequisiti**     | -                                                            |
@@ -404,7 +399,7 @@ Le tabelle  sottostanti rappresentano i test che abbiamo svolto in base hai requ
 
 | Test Case            | TC-003                                                       |
 | -------------------- | ------------------------------------------------------------ |
-| **Nome**             | Pagina Web per grafici                             |
+| **Nome**             | Pagina Web per grafici                                       |
 | **Riferimento**      | REQ-003                                                      |
 | **Descrizione**      | Gestire i dati mandati dalla pagina web della webcam tramite dei grafici |
 | **Prerequisiti**     | -                                                            |
@@ -415,10 +410,10 @@ Le tabelle  sottostanti rappresentano i test che abbiamo svolto in base hai requ
 METTERE A POSTO IL REQUISITO QUATTRO, LA PROCEDURA
 | Test Case            | TC-004                                                       |
 | -------------------- | ------------------------------------------------------------ |
-| **Nome**             | Database                                      |
+| **Nome**             | Database                                                     |
 | **Riferimento**      | REQ-006                                                      |
 | **Descrizione**      | Realizzazione di una bancadati che contiene i dati raccolti dalla pagina web della Webcam |
-| **Prerequisiti**     | L`applicazione del rilevamento facciale deve essere conclusa e funzionante |
+| **Prerequisiti**     | L`applicazione del rilevamento facciale deve essere conclusa e funzionante |
 | **Procedura**        | - Scaricare un programma per creare il database, noi abbiamo utlitzzato Heidi - Cre<re il database con gli stessi parametri della libreira presa e del codice scritto nella pagian web della Webcam. |
 | **Risultati attesi** | Il database riesce a prendere i dati delle pagine prescritte |
 
@@ -444,10 +439,10 @@ METTERE A POSTO IL REQUISITO QUATTRO, LA PROCEDURA
 | -------------------- | ------------------------------------------------------------ |
 | **Nome**             | Utilizzo del prodotto su RaspBerry                           |
 | **Riferimento**      | REQ-005                                                      |
-| **Descrizione**      | Installazione del sitema operativo su Rasberry e fare in modo che il raspberry sia in grado di eseguire i file .exe|
+| **Descrizione**      | Installazione del sitema operativo su Rasberry e fare in modo che il raspberry sia in grado di eseguire i file .exe |
 | **Prerequisiti**     | avere un Raspberry                                           |
 | **Procedura**        | - Caricare l`immagine del sistema operativo sul raspberry e installare mono 13.7 |
-| **Risultati attesi** | Raspberry é in grado di eseguire file di estensione .exe.                      |
+| **Risultati attesi** | Raspberry é in grado di eseguire file di estensione .exe.    |
 
 
 
@@ -465,7 +460,6 @@ Per noi é stata difficile la partenza, cioè suddividerci il lavoro e imparare 
 
 Ecco come sono andate le ore di lavoro, in base a quelle che abbiamo programmato prima dell`inizio del progetto.
 
-![Gantt Consuntivo](immagini/GANTT_consuntivo.png)
 
 ## Conclusioni
 
@@ -498,5 +492,5 @@ La soluzione che abbiamo portato ci soddisfa, é sicurmante molto più soddisfac
 Elenco degli allegati:
 
 -   Diari di lavoro
-
 -   Guida utente / Manuale di utilizzo
+-   Guida di configurazione di raspberry
