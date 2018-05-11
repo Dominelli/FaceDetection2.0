@@ -124,7 +124,7 @@ The result was what I expected since the beginning, our approach worked very wel
 
 Questo é il Gantt che abbiamo realizzato in base alla lista dei requisiti che abbiamo redatto e al tempo a disposizione.
 
-![Gantt Preventivo](immagini/GANTT_preventivo.jpg)
+![Gantt Preventivo](progettazione/Gantt.png)
 
 
 
