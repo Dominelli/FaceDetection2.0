@@ -30,7 +30,7 @@
 1. Ho avuto qualche errore durante l`installazione di PanDoc, mancava un pachetto chiamato mactex-20170524. Sono riuscito a trovare il pacchetto (pesa 5,5 GB) , ora é tutto aposto  e funzionante
 
 ##  Punto della situazione rispetto alla pianificazione
-- Nei tempi
+- Nei tempi in base al GANTT
 
 ## Programma di massima per la prossima giornata di lavoro
-- Finire il progetto
+- Rispettare il GANTT
