@@ -106,8 +106,7 @@ The result was what I expected since the beginning, our approach worked very wel
 | **003**      | La webcam deve eseguire la ricerca di nuovi volti ogni 15 secondi e se rileva dei volti nelle coordinate vicine a quelle vecchie, non ne terrà conto. |
 
 
-| ID           | REQ-005
-|
+| ID           | REQ-005						      |
 | ------------ | ------------------------------------------------------------ |
 | **Nome**     | Utilizzo del prodotto su RaspBerry                           |
 | **Priorità** | 1                                                            |
@@ -387,7 +386,7 @@ Le tabelle  sottostanti rappresentano i test che abbiamo svolto in base hai requ
 | Test Case            | TC-001                                                       |
 | -------------------- | ------------------------------------------------------------ |
 | **Nome**             | Creazione macchina virtuale                                  |
-| **Riferimento**      | REQ-002                                                      |
+| **Riferimento**      | REQ-001                                                      |
 | **Descrizione**      | Creazione macchina virtuale per gestire le cartelle su raspberry |
 | **Prerequisiti**     |                                                              |
 | **Procedura**        | - Installare un programma per gestire le macchine virtuali, noi abbuamo usato VirtualBox. - Creare una macchina virtuale Windows. - Installare microsoft VisualStudio 2017.|
@@ -397,7 +396,7 @@ Le tabelle  sottostanti rappresentano i test che abbiamo svolto in base hai requ
 | Test Case            | TC-002                                                       |
 | -------------------- | ------------------------------------------------------------ |
 | **Nome**             | Supporto grafico dell`applicazione			      |
-| **Riferimento**      | REQ-003                                                      |
+| **Riferimento**      | REQ-002                                                      |
 | **Descrizione**      | Gestire il riconoscimento facciale                           |
 | **Prerequisiti**     | -                                                            |
 | **Procedura**        | - Scaricare la libreria OpenCV - Modificare la libreira con il linguaggio C#. |
@@ -406,7 +405,7 @@ Le tabelle  sottostanti rappresentano i test che abbiamo svolto in base hai requ
 | Test Case            | TC-003                                                       |
 | -------------------- | ------------------------------------------------------------ |
 | **Nome**             | Pagina Web per grafici                             |
-| **Riferimento**      | REQ-004                                                      |
+| **Riferimento**      | REQ-003                                                      |
 | **Descrizione**      | Gestire i dati mandati dalla pagina web della webcam tramite dei grafici |
 | **Prerequisiti**     | -                                                            |
 | **Procedura**        | - Realizzare dei grafici tramite la libreria chart.js - Prendere i dati dal database e inserirli all`inerno dei grafici. |
@@ -426,7 +425,7 @@ METTERE A POSTO IL REQUISITO QUATTRO, LA PROCEDURA
 | Test Case            | TC-005                                                       |
 | -------------------- | ------------------------------------------------------------ |
 | **Nome**             | Ricerca di nuovi volti                                       |
-| **Riferimento**      | REQ-007                                                      |
+| **Riferimento**      | REQ-004                                                      |
 | **Descrizione**      | I volti vengono trovati dalla pagina della Webcam            |
 | **Prerequisiti**     | Download libreria tracking.js                                |
 | **Procedura**        | - Aver installato la libreria tracking.js - Gestire il riconoscimento facciale tramite JavaScript |
@@ -435,7 +434,7 @@ METTERE A POSTO IL REQUISITO QUATTRO, LA PROCEDURA
 | Test Case            | TC-006                                                       |
 | -------------------- | ------------------------------------------------------------ |
 | **Nome**             | Salvataggio delle persone sul DB                             |
-| **Riferimento**      | REQ-008                                                      |
+| **Riferimento**      | REQ-004                                                      |
 | **Descrizione**      | Questo test serve per verificare il corretto funzionamento dell'immissione dei dati all'interno del database |
 | **Prerequisiti**     | aver creato il database                                      |
 | **Procedura**        | - Collegare il database alle pagine tramite php              |
@@ -444,11 +443,11 @@ METTERE A POSTO IL REQUISITO QUATTRO, LA PROCEDURA
 | Test Case            | TC-007                                                       |
 | -------------------- | ------------------------------------------------------------ |
 | **Nome**             | Utilizzo del prodotto su RaspBerry                           |
-| **Riferimento**      | REQ-009                                                      |
-| **Descrizione**      | Installazione del sitema operativo su Rasberry e installazione webserver |
+| **Riferimento**      | REQ-005                                                      |
+| **Descrizione**      | Installazione del sitema operativo su Rasberry e fare in modo che il raspberry sia in grado di eseguire i file .exe|
 | **Prerequisiti**     | avere un Raspberry                                           |
-| **Procedura**        | - Caricare l`immagine del sistema operativo sul raspberry - Installare un webserver tramite in comandi opportuni |
-| **Risultati attesi** | Raspberry é effetivamente un webserver.                      |
+| **Procedura**        | - Caricare l`immagine del sistema operativo sul raspberry e installare mono 13.7 |
+| **Risultati attesi** | Raspberry é in grado di eseguire file di estensione .exe.                      |
 
 
 
