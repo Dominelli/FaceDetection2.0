@@ -179,15 +179,15 @@ Il database che abbiamo realizzato non é molto complesso. Presenta soltanto le 
 
 Impostazioni
 
-![tr_impostazion](/Users/gionatabattaglioni/Desktop/FD_V2/immagni_utili/str_impostazioni.jpeg)
+![tr_impostazion](immagni/str_impostazioni.jpeg)
 
 Inserimento delle facce
 
-![tr_inserFac](/Users/gionatabattaglioni/Desktop/FD_V2/immagni_utili/str_inserFace.jpeg)
+![tr_inserFac](immagni//str_inserFace.jpeg)
 
 Tempo della visita
 
-![tr_tempo_visit](/Users/gionatabattaglioni/Desktop/FD_V2/immagni_utili/str_tempo_visita.jpeg)
+![tr_tempo_visit](immagni//str_tempo_visita.jpeg)
 
 
 
@@ -195,7 +195,7 @@ Tempo della visita
 
 Questo é il diagramma ER del database generato per consentire lo scambio dei dati tramite la pagina web dei grafici e l`applicazione in C#.
 
-![b_e](/Users/gionatabattaglioni/Desktop/FD_V2/immagni_utili/db_er.png)
+![b_e](immagni//db_er.png)
 
 
 
@@ -203,13 +203,13 @@ Questo é il diagramma ER del database generato per consentire lo scambio dei da
 
 Prima di iniziare a scrivere il codice abbiamo pensato a un approccio molto simile a quello del progetto precedente ma con dei cambiamenti. Avendo scelto un altra libreria abbiamo cambiato anche il linguaggio di scrittura del codice. Quindi l` interfaccia grafica si presenta così:
 
-![ebcamVisua](/Users/gionatabattaglioni/Desktop/FD_V2/immagni_utili/webcamVisual.jpeg)
+![ebcamVisua](immagni//webcamVisual.jpeg)
 
 
 
 Per quello che concerne la pagina dei grafici abbiamo deciso di tenere la stessa struttura ma di cambiare un po la grafica, ponendo i due grafici come se forssero un confronto quindi uno da parte all`altro e non più uno sopra e uno sotto.
 
-![ockupGrafic](/Users/gionatabattaglioni/Desktop/FD_V2/immagni_utili/MockupGrafici.png)
+![ockupGrafic](immagni//MockupGrafici.png)
 
 
 
@@ -233,7 +233,9 @@ Eccon in poche parloe cosa é in grado di fare la nostra applicazione:
 
 **Ognuna di queste informazioni saranno poi fondamentali per la creazione dei grafici di statistica!**
 
-Così è come la pagina mostrala sua forma:![ebcamTes](/Users/gionatabattaglioni/Desktop/FD_V2/immagni_utili/webcamTest.jpeg)
+Così è come la pagina mostrala sua forma:
+
+![ebcamTes](immagni//webcamTest.jpeg)
 
 
 
