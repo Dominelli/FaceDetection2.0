@@ -124,7 +124,7 @@ The result was what I expected since the beginning, our approach worked very wel
 
 Questo é il Gantt che abbiamo realizzato in base alla lista dei requisiti che abbiamo redatto e al tempo a disposizione.
 
-![Gantt Preventivo](Gantt/Gantt.png)
+![Gantt Preventivo](progettazione/Gantt.png)
 
 
 
@@ -179,15 +179,15 @@ Il database che abbiamo realizzato non é molto complesso. Presenta soltanto le 
 
 Impostazioni
 
-![tr_impostazion](immagni/str_impostazioni.jpeg)
+![tr_impostazion](Immagni/str_impostazioni.jpeg)
 
 Inserimento delle facce
 
-![tr_inserFac](immagni//str_inserFace.jpeg)
+![tr_inserFac](Immagni//str_inserFace.jpeg)
 
 Tempo della visita
 
-![tr_tempo_visit](immagni//str_tempo_visita.jpeg)
+![tr_tempo_visit](Immagni//str_tempo_visita.jpeg)
 
 
 
@@ -195,7 +195,7 @@ Tempo della visita
 
 Questo é il diagramma ER del database generato per consentire lo scambio dei dati tramite la pagina web dei grafici e l`applicazione in C#.
 
-![b_e](immagni//db_er.png)
+![b_e](Immagni//db_er.png)
 
 
 
@@ -203,13 +203,13 @@ Questo é il diagramma ER del database generato per consentire lo scambio dei da
 
 Prima di iniziare a scrivere il codice abbiamo pensato a un approccio molto simile a quello del progetto precedente ma con dei cambiamenti. Avendo scelto un altra libreria abbiamo cambiato anche il linguaggio di scrittura del codice. Quindi l` interfaccia grafica si presenta così:
 
-![ebcamVisua](immagni//webcamVisual.jpeg)
+![ebcamVisua](Immagni//webcamVisual.jpeg)
 
 
 
 Per quello che concerne la pagina dei grafici abbiamo deciso di tenere la stessa struttura ma di cambiare un po la grafica, ponendo i due grafici come se forssero un confronto quindi uno da parte all`altro e non più uno sopra e uno sotto.
 
-![ockupGrafic](immagni//MockupGrafici.png)
+![ockupGrafic](Immagni//MockupGrafici.png)
 
 
 
@@ -235,7 +235,7 @@ Eccon in poche parloe cosa é in grado di fare la nostra applicazione:
 
 Così è come la pagina mostrala sua forma:
 
-![ebcamTes](immagni//webcamTest.jpeg)
+![ebcamTes](Immagni//webcamTest.jpeg)
 
 
 
