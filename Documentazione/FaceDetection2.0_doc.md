@@ -212,7 +212,7 @@ Questo é il diagramma ER del database generato per consentire lo scambio dei da
 
 Prima di iniziare a scrivere il codice abbiamo pensato a un approccio molto simile a quello del progetto precedente ma con dei cambiamenti. Avendo scelto un altra libreria abbiamo cambiato anche il linguaggio di scrittura del codice. Quindi l` interfaccia grafica si presenta così:
 
-![ebcamVisua](/Immagini/webcamVisual.jpeg)
+![ebcamVisua](Immagini/webcamVisual.jpeg)
 
 
 
