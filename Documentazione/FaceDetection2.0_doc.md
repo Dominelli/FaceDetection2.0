@@ -133,7 +133,7 @@ The result was what I expected since the beginning, our approach worked very wel
 
 Questo é il Gantt che abbiamo realizzato in base alla lista dei requisiti che abbiamo redatto e al tempo a disposizione.
 
-![Gantt Preventivo](Gantt/Gantt.png)
+![Gantt Preventivo](progettazione/Gantt.png)
 
 
 
@@ -188,15 +188,15 @@ Il database che abbiamo realizzato non é molto complesso. Presenta soltanto le 
 
 Impostazioni
 
-![tr_impostazion](/Users/gionatabattaglioni/Desktop/FD_V2/immagni_utili/str_impostazioni.jpeg)
+![tr_impostazion](/Immagini/str_impostazioni.jpeg)
 
 Inserimento delle facce
 
-![tr_inserFac](/Users/gionatabattaglioni/Desktop/FD_V2/immagni_utili/str_inserFace.jpeg)
+![tr_inserFac](/Immagini/str_inserFace.jpeg)
 
 Tempo della visita
 
-![tr_tempo_visit](/Users/gionatabattaglioni/Desktop/FD_V2/immagni_utili/str_tempo_visita.jpeg)
+![tr_tempo_visit](/Immagini/str_tempo_visita.jpeg)
 
 
 
