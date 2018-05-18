@@ -188,15 +188,15 @@ Il database che abbiamo realizzato non é molto complesso. Presenta soltanto le 
 
 Impostazioni
 
-![tr_impostazion](/Immagini/str_impostazioni.jpeg)
+![tr_impostazion](Immagini/str_impostazioni.jpeg)
 
 Inserimento delle facce
 
-![tr_inserFac](/Immagini/str_inserFace.jpeg)
+![tr_inserFac](Immagini/str_inserFace.jpeg)
 
 Tempo della visita
 
-![tr_tempo_visit](/Immagini/str_tempo_visita.jpeg)
+![tr_tempo_visit](Immagini/str_tempo_visita.jpeg)
 
 
 
@@ -204,7 +204,7 @@ Tempo della visita
 
 Questo é il diagramma ER del database generato per consentire lo scambio dei dati tramite la pagina web dei grafici e l`applicazione in C#.
 
-![b_e](/Immagini/db_er.png)
+![b_e](Immagini/db_er.png)
 
 
 
@@ -218,7 +218,7 @@ Prima di iniziare a scrivere il codice abbiamo pensato a un approccio molto simi
 
 Per quello che concerne la pagina dei grafici abbiamo deciso di tenere la stessa struttura ma di cambiare un po la grafica, ponendo i due grafici come se forssero un confronto quindi uno da parte all`altro e non più uno sopra e uno sotto.
 
-![ockupGrafic](/Immagini/MockupGrafici.png)
+![ockupGrafic](Immagini/MockupGrafici.png)
 
 
 
