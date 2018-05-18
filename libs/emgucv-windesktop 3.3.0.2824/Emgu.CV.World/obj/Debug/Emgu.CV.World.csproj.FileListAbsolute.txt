@@ -1,0 +1,6 @@
+C:\Emgu\emgucv-windesktop 3.3.0.2824\libs\Emgu.CV.World.XML
+C:\Emgu\emgucv-windesktop 3.3.0.2824\libs\Emgu.CV.World.dll
+C:\Emgu\emgucv-windesktop 3.3.0.2824\libs\Emgu.CV.World.pdb
+C:\Emgu\emgucv-windesktop 3.3.0.2824\Emgu.CV.World\obj\Debug\Emgu.CV.World.csproj.CoreCompileInputs.cache
+C:\Emgu\emgucv-windesktop 3.3.0.2824\Emgu.CV.World\obj\Debug\Emgu.CV.World.dll
+C:\Emgu\emgucv-windesktop 3.3.0.2824\Emgu.CV.World\obj\Debug\Emgu.CV.World.pdb

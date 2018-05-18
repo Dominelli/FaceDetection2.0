@@ -1,0 +1,4 @@
+C:\Emgu\emgucv-windesktop 3.3.0.2824\FaceRecProOV\obj\x86\Release\MultiFaceRec.FrmPrincipal.resources
+C:\Emgu\emgucv-windesktop 3.3.0.2824\FaceRecProOV\obj\x86\Release\MultiFaceRec.Properties.Resources.resources
+C:\Emgu\emgucv-windesktop 3.3.0.2824\FaceRecProOV\obj\x86\Release\MultiFaceRec.csproj.GenerateResource.Cache
+C:\Emgu\emgucv-windesktop 3.3.0.2824\FaceRecProOV\obj\x86\Release\MultiFaceRec.csproj.CoreCompileInputs.cache
