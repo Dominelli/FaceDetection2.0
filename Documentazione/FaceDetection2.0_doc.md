@@ -204,7 +204,7 @@ Tempo della visita
 
 Questo é il diagramma ER del database generato per consentire lo scambio dei dati tramite la pagina web dei grafici e l`applicazione in C#.
 
-![b_e](/Users/gionatabattaglioni/Desktop/FD_V2/immagni_utili/db_er.png)
+![b_e](/Immagini/db_er.png)
 
 
 
@@ -212,13 +212,13 @@ Questo é il diagramma ER del database generato per consentire lo scambio dei da
 
 Prima di iniziare a scrivere il codice abbiamo pensato a un approccio molto simile a quello del progetto precedente ma con dei cambiamenti. Avendo scelto un altra libreria abbiamo cambiato anche il linguaggio di scrittura del codice. Quindi l` interfaccia grafica si presenta così:
 
-![ebcamVisua](/Users/gionatabattaglioni/Desktop/FD_V2/immagni_utili/webcamVisual.jpeg)
+![ebcamVisua](/Immagini/webcamVisual.jpeg)
 
 
 
 Per quello che concerne la pagina dei grafici abbiamo deciso di tenere la stessa struttura ma di cambiare un po la grafica, ponendo i due grafici come se forssero un confronto quindi uno da parte all`altro e non più uno sopra e uno sotto.
 
-![ockupGrafic](/Users/gionatabattaglioni/Desktop/FD_V2/immagni_utili/MockupGrafici.png)
+![ockupGrafic](/Immagini/MockupGrafici.png)
 
 
 
