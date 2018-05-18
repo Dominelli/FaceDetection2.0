@@ -29,17 +29,19 @@ Lucas
 1. La porta 443 è bloccata, non ho ancora trovato come sistemarla perchè la porta è gia occupata (MAC OS)
 2. provando a far partire il file Python per il riconoscimento facciale dalla shell viene visualizzato questo errore:
 ~~~
-// carico il file haarcascade che svolge il face detection
-face = new HaarCascade("haarcascade_frontalface_default.xml");
-// eventualmente riconoscimento degli occhi.
-try
+if (trainingImages.ToArray().Length != 0)
 {
-      // carico eventuali facce già riconosciute in precedenza
-      string Labelsinfo = File.ReadAllText(Application.StartupPath + "/TrainedFaces/TrainedLabels.txt");
-      // i nomi sono separati dal carattere "%"
-      string[] Labels = Labelsinfo.Split('%');
-      // il primo valore contenuto nel file è il numero di facce registrate
-      NumLabels = Convert.ToInt16(Labels[0]);
+     EigenObjectRecognizer recognizer = new EigenObjectRecognizer(
+           trainingImages.ToArray(),
+           labels.ToArray(),
+           3000,
+           ref termCrit);
+
+      name = recognizer.Recognize(result);
+
+      // scrive il nome di ogni faccia riconosciuta
+      currentFrame.Draw(name, ref font, new Point(f.rect.X - 2, f.rect.Y - 2), new Bgr(Color.LightGreen));
+}
 ~~~
 il problema era che mancava questa riga di codice:
 ~~~
