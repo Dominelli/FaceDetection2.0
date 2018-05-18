@@ -29,10 +29,13 @@ Lucas
 1. La porta 443 è bloccata, non ho ancora trovato come sistemarla perchè la porta è gia occupata (MAC OS)
 2. provando a far partire il file Python per il riconoscimento facciale dalla shell viene visualizzato questo errore:
 ~~~
-// connessione al database
-$servername = "(local)";
-$username = array("Database"=>"facedetection");
-$conn = sqlsrv_connect($servername, $username);
+// query per le statistiche
+$sql = "SELECT Inizio, Fine FROM tempo_visita";
+			$result = sqlsrv_query($conn, $sql);
+			if ($result === FALSE) {
+				die( print_r( sqlsrv_errors(), true) );
+				echo "Errore di connessione";
+			}
 ~~~
 il problema era che mancava questa riga di codice:
 ~~~
