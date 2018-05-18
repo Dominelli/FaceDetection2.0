@@ -105,8 +105,17 @@ The result was what I expected since the beginning, our approach worked very wel
 | **002**      | Implementare il codice per l’individuazione dei dati tramite libreria. |
 | **003**      | La webcam deve eseguire la ricerca di nuovi volti ogni 15 secondi e se rileva dei volti nelle coordinate vicine a quelle vecchie, non ne terrà conto. |
 
-
 | ID           | REQ-005                                               |
+| ------------ | ----------------------------------------------------- |
+| **Nome**     | Salvataggio sul Database                    |
+| **Priorità** | 1                                                     |
+| **Versione** | 1.0                                                   |
+| **Note**     |                                                       |
+| **Sub-ID**   | Requisito                                             |
+| **001**      | Allestire un database capace di contenere i dati             |
+| **002**      | Il Database deve essere compatibile sia per le pagine web e sia con l`applicazione scritta in C# |
+
+| ID           | REQ-006                                               |
 | ------------ | ----------------------------------------------------- |
 | **Nome**     | Utilizzo del prodotto su RaspBerry                    |
 | **Priorità** | 1                                                     |
@@ -124,7 +133,7 @@ The result was what I expected since the beginning, our approach worked very wel
 
 Questo é il Gantt che abbiamo realizzato in base alla lista dei requisiti che abbiamo redatto e al tempo a disposizione.
 
-![Gantt Preventivo](progettazione/Gantt.png)
+![Gantt Preventivo](Gantt/Gantt.png)
 
 
 
@@ -179,15 +188,15 @@ Il database che abbiamo realizzato non é molto complesso. Presenta soltanto le 
 
 Impostazioni
 
-![tr_impostazion](Immagini/str_impostazioni.jpeg)
+![tr_impostazion](/Users/gionatabattaglioni/Desktop/FD_V2/immagni_utili/str_impostazioni.jpeg)
 
 Inserimento delle facce
 
-![tr_inserFac](Immagini//str_inserFace.jpeg)
+![tr_inserFac](/Users/gionatabattaglioni/Desktop/FD_V2/immagni_utili/str_inserFace.jpeg)
 
 Tempo della visita
 
-![tr_tempo_visit](Immagini//str_tempo_visita.jpeg)
+![tr_tempo_visit](/Users/gionatabattaglioni/Desktop/FD_V2/immagni_utili/str_tempo_visita.jpeg)
 
 
 
@@ -195,7 +204,7 @@ Tempo della visita
 
 Questo é il diagramma ER del database generato per consentire lo scambio dei dati tramite la pagina web dei grafici e l`applicazione in C#.
 
-![b_e](Immagini//db_er.png)
+![b_e](/Users/gionatabattaglioni/Desktop/FD_V2/immagni_utili/db_er.png)
 
 
 
@@ -203,13 +212,13 @@ Questo é il diagramma ER del database generato per consentire lo scambio dei da
 
 Prima di iniziare a scrivere il codice abbiamo pensato a un approccio molto simile a quello del progetto precedente ma con dei cambiamenti. Avendo scelto un altra libreria abbiamo cambiato anche il linguaggio di scrittura del codice. Quindi l` interfaccia grafica si presenta così:
 
-![ebcamVisua](Immagini//webcamVisual.jpeg)
+![ebcamVisua](/Users/gionatabattaglioni/Desktop/FD_V2/immagni_utili/webcamVisual.jpeg)
 
 
 
 Per quello che concerne la pagina dei grafici abbiamo deciso di tenere la stessa struttura ma di cambiare un po la grafica, ponendo i due grafici come se forssero un confronto quindi uno da parte all`altro e non più uno sopra e uno sotto.
 
-![ockupGrafic](Immagini//MockupGrafici.png)
+![ockupGrafic](/Users/gionatabattaglioni/Desktop/FD_V2/immagni_utili/MockupGrafici.png)
 
 
 
@@ -233,9 +242,7 @@ Eccon in poche parloe cosa é in grado di fare la nostra applicazione:
 
 **Ognuna di queste informazioni saranno poi fondamentali per la creazione dei grafici di statistica!**
 
-Così è come la pagina mostrala sua forma:
-
-![ebcamTes](Immagini//webcamTest.jpeg)
+Così è come la pagina mostrala sua forma:![ebcamTes](/Users/gionatabattaglioni/Desktop/FD_V2/immagni_utili/webcamTest.jpeg)
 
 
 
@@ -409,17 +416,9 @@ Le tabelle  sottostanti rappresentano i test che abbiamo svolto in base hai requ
 | **Risultati attesi** | I grafici vengono mostrati correttamente in base hai dati presi dal database. |
 
 
-METTERE A POSTO IL REQUISITO QUATTRO, LA PROCEDURA
-| Test Case            | TC-004                                                       |
-| -------------------- | ------------------------------------------------------------ |
-| **Nome**             | Database                                                     |
-| **Riferimento**      | REQ-006                                                      |
-| **Descrizione**      | Realizzazione di una bancadati che contiene i dati raccolti dalla pagina web della Webcam |
-| **Prerequisiti**     | L`applicazione del rilevamento facciale deve essere conclusa e funzionante |
-| **Procedura**        | - Scaricare un programma per creare il database, noi abbiamo utlitzzato Heidi - Cre<re il database con gli stessi parametri della libreira presa e del codice scritto nella pagian web della Webcam. |
-| **Risultati attesi** | Il database riesce a prendere i dati delle pagine prescritte |
 
-| Test Case            | TC-005                                                       |
+
+| Test Case            | TC-004                                                       |
 | -------------------- | ------------------------------------------------------------ |
 | **Nome**             | Ricerca di nuovi volti                                       |
 | **Riferimento**      | REQ-004                                                      |
@@ -427,6 +426,16 @@ METTERE A POSTO IL REQUISITO QUATTRO, LA PROCEDURA
 | **Prerequisiti**     | Download libreria tracking.js                                |
 | **Procedura**        | - Aver installato la libreria tracking.js - Gestire il riconoscimento facciale tramite JavaScript |
 | **Risultati attesi** | La pagina della Webcam é in grado di riconoscre i volti      |
+
+| Test Case            | TC-005                                                       |
+| -------------------- | ------------------------------------------------------------ |
+| **Nome**             | Database                                                     |
+| **Riferimento**      | REQ-006                                                      |
+| **Descrizione**      | Realizzazione di una bancadati che contiene i dati raccolti dalla pagina web della Webcam |
+| **Prerequisiti**     | L`applicazione del rilevamento facciale deve essere conclusa e funzionante |
+| **Procedura**        | - Scaricare un programma per creare il database, noi abbiamo utlitzzato Heidi - Cre<re il database con gli stessi parametri della libreira presa e del codice scritto per l applicazione della Webcam. |
+| **Risultati attesi** | Il database riesce a prendere i dati delle pagine prescritte |
+
 
 | Test Case            | TC-006                                                       |
 | -------------------- | ------------------------------------------------------------ |
