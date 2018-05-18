@@ -242,7 +242,9 @@ Eccon in poche parloe cosa é in grado di fare la nostra applicazione:
 
 **Ognuna di queste informazioni saranno poi fondamentali per la creazione dei grafici di statistica!**
 
-Così è come la pagina mostrala sua forma:![ebcamTes](/Users/gionatabattaglioni/Desktop/FD_V2/immagni_utili/webcamTest.jpeg)
+Così è come la pagina mostrala sua forma:
+
+![ebcamTes](Immagini/webcamTest.jpeg)
 
 
 
