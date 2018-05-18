@@ -31,11 +31,11 @@ Lucas
 ~~~
 // query per le statistiche
 $sql = "SELECT Inizio, Fine FROM tempo_visita";
-			$result = sqlsrv_query($conn, $sql);
-			if ($result === FALSE) {
-				die( print_r( sqlsrv_errors(), true) );
-				echo "Errore di connessione";
-			}
+$result = sqlsrv_query($conn, $sql);
+if ($result === FALSE) {
+	die( print_r( sqlsrv_errors(), true) );
+	echo "Errore di connessione";
+}
 ~~~
 il problema era che mancava questa riga di codice:
 ~~~
