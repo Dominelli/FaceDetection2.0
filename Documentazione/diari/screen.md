@@ -29,23 +29,10 @@ Lucas
 1. La porta 443 è bloccata, non ho ancora trovato come sistemarla perchè la porta è gia occupata (MAC OS)
 2. provando a far partire il file Python per il riconoscimento facciale dalla shell viene visualizzato questo errore:
 ~~~
-// stringa di connessione al database
-connectionString = "Server=localhost;Database=facedetection;Trusted_Connection=True";
-using (SqlConnection cnn = new SqlConnection(connectionString))
-{
-     sql = "insert into inserimento_facce ([ID_Facce], [Nome]) values (@first, @last)";
-     sql1 = "select count(*) from inserimento_facce";
-     SqlCommand cnt = new SqlCommand(sql1, cnn);
-     cnn.Open();
-     using (SqlCommand cmd = new SqlCommand(sql, cnn))
-     {
-          Int32 count = Convert.ToInt32(cnt.ExecuteScalar());
-          cmd.Parameters.AddWithValue("@first", count);
-          cmd.Parameters.AddWithValue("@last", textBox1.Text);
-          int row = cmd.ExecuteNonQuery();
-          MessageBox.Show(row + " Row inserted !! ");
-      }
-}
+// connessione al database
+$servername = "(local)";
+$username = array("Database"=>"facedetection");
+$conn = sqlsrv_connect($servername, $username);
 ~~~
 il problema era che mancava questa riga di codice:
 ~~~
