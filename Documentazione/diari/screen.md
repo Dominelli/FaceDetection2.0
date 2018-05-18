@@ -29,18 +29,14 @@ Lucas
 1. La porta 443 è bloccata, non ho ancora trovato come sistemarla perchè la porta è gia occupata (MAC OS)
 2. provando a far partire il file Python per il riconoscimento facciale dalla shell viene visualizzato questo errore:
 ~~~
-if (trainingImages.ToArray().Length != 0)
+currentFrame = grabber.QueryFrame().Resize(320, 240, Emgu.CV.CvEnum.INTER.CV_INTER_CUBIC);
+[...]
+foreach (MCvAvgComp f in facesDetected[0])
 {
-     EigenObjectRecognizer recognizer = new EigenObjectRecognizer(
-           trainingImages.ToArray(),
-           labels.ToArray(),
-           3000,
-           ref termCrit);
-
-      name = recognizer.Recognize(result);
-
-      // scrive il nome di ogni faccia riconosciuta
-      currentFrame.Draw(name, ref font, new Point(f.rect.X - 2, f.rect.Y - 2), new Bgr(Color.LightGreen));
+     result = currentFrame.Copy(f.rect).Convert<Gray, byte>().Resize(100, 100, Emgu.CV.CvEnum.INTER.CV_INTER_CUBIC);
+     // disegno del rettangolo intorno alle facce
+     currentFrame.Draw(f.rect, new Bgr(Color.Red), 2);
+     [...]
 }
 ~~~
 il problema era che mancava questa riga di codice:
